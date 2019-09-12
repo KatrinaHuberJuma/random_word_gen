@@ -3,6 +3,6 @@
 from django.shortcuts import render, HttpResponse
 
 def index(request):
-    return HttpResponse("this is the equivalent of @app.route('/')!")
+    return render(request, "word_gen_app/index.html")
 
 # Create your views here.
